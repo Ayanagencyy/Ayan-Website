@@ -1,0 +1,17 @@
+.app {
+    margin: auto;
+    max-width: 1280px;
+    padding: 0 15px;
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .app {
+        gap: 30px;
+    }
+}

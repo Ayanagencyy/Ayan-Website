@@ -1,0 +1,122 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: var(--bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 380px;
+  color: var(--header-text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.modal-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-box p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.inp {
+  width: 360px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: var(--bg-color);
+  color: var(--header-text);
+}
+
+.sel {
+  width: 380px;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: var(--bg-color);
+  color: var(--home-text);
+}
+
+.mbutton {
+  width: 100%;
+  padding: 12px;
+  background-color: #05585333;
+  border: none;
+  border-radius: 5px;
+  color: var(--header-text);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+option {
+  color: var(--header-text);
+}
+
+form {
+  text-align: start;
+}
+
+.react-datepicker__month-container {
+  background-color: var(--bg-color);
+  border: 1px solid var(--header-text);
+  border-radius: 4px;
+}
+
+.react-datepicker__day--selected {
+  background-color: var(--bg-color) !important;
+}
+
+.react-datepicker__day {
+  color: var(--header-text) !important;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  color: var(--header-text) !important;
+  background-color: var(--btn-bg) !important;
+}
+
+.react-datepicker__header {
+  color: var(--header-text) !important;
+  background-color: var(--bg-color) !important;
+}
+
+.react-datepicker__current-month {
+  color: var(--header-text) !important;
+}
+
+.react-datepicker__day-name {
+  color: var(--header-text) !important;
+}

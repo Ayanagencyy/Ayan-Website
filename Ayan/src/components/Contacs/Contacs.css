@@ -1,0 +1,97 @@
+.contacts {
+    background-color: var(--bg-color);
+    font-family: Inter, sans-serif;
+    padding: 20px 30px;
+    margin: auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.info {
+    margin-top: 30px;
+    max-width: 1100px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 20px;
+    filter: var(--invert);
+}
+
+.blocks {
+    max-width: 520px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact {
+    padding: 10px;
+    width: 220px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid var(--border-color);
+    transition: 0.5s;
+}
+
+.contact:hover {
+    border: 1px solid var(--accent-color);
+    box-shadow: 0px 0px 8px var(--accent-color);
+}
+
+.book {
+    padding: 10px;
+    max-width: 500px;
+    height: 250px;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0px 0px 10px var(--accent-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.book:hover {
+    box-shadow: 0px 0px 8px var(--accent-color);
+}
+
+.cbtn {
+    max-width: 480px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #05585333;
+    border-radius: 8px;
+}
+
+.contacts:hover {
+    box-shadow: 0px 0px 8px var(--block-hover);
+}
+
+.cinfo {
+    color: var(--header-text);
+}

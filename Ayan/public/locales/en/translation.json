@@ -1,0 +1,195 @@
+{
+    "Nav": [
+        "Home",
+        "About",
+        "Services",
+        "Portfolio",
+        "Contact"
+    ],
+    "lng": "EN",
+    "HomeText": [
+        "Crafting Visual Experiences",
+        "Graphic & UI/UX Design",
+        "We transform ideas into compelling visual stories and intuitive interfaces that connect with your audience."
+    ],
+    "About": [
+        "Ayán Design is a graphic and UI/UX design company with over 3 years of experience. We have successfully completed more than 700 projects for clients from various countries. Our team creates smart, modern, and effective designs that help businesses stand out from the competition. Regardless of your location, Ayán Design is ready to be your trusted partner in delivering beautiful and impactful design solutions.",
+        "3+ Years Experience",
+        "700+ Projects",
+        [
+            "Brand Identity Design",
+            "UI/UX & Web Design",
+            "Print Design",
+            "Social Media Marketing",
+            "Marketing Research",
+            "Wildberries Seller Manager"
+        ]
+    ],
+    "Services": [
+        "Services",
+        [
+            "Web | Mobile App Design",
+            "Branding & Identity Design",
+            "Logo Design",
+            "Flyers | Brochures | Posters",
+            "Wildberries | Ozon Card Design",
+            "Packaging Design",
+            "Menu Design",
+            "Magazines | Newspapers",
+            "Books | eBooks",
+            "Social Media Design",
+            "Banners | Ads",
+            "Marketing | Advertising Design",
+            "Illustration | Visual Art",
+            "GIF | Short Animations",
+            "Product | Merchandise Design"
+        ]
+    ],
+    "images": [
+        {
+            "id": 1,
+            "path": "/cover/1.jpg",
+            "name": "1880 Высота | Logo | Brand Identity",
+            "btn": "View Project"
+        },
+        {
+            "id": 2,
+            "path": "/cover/2.jpg",
+            "name": "Hey Chick Burger | Logo | Brand Identity",
+            "btn": "View Project"
+        },
+        {
+            "id": 3,
+            "path": "/cover/3.jpg",
+            "name": "Geo Consulting | Logo | Brand Identity",
+            "btn": "View Project"
+        },
+        {
+            "id": 4,
+            "path": "/cover/4.jpg",
+            "name": "GS Rent Apartment | Logo | Brochure | Business Card",
+            "btn": "View Project"
+        },
+        {
+            "id": 5,
+            "path": "/cover/5.jpg",
+            "name": "Mountains of Courchevel | Logo | Brand Identity",
+            "btn": "View Project"
+        },
+        {
+            "id": 6,
+            "path": "/cover/6.jpg",
+            "name": "Wildberries | Ozon | Card Design",
+            "btn": "View Project"
+        },
+        {
+            "id": 7,
+            "path": "/cover/7.jpg",
+            "name": "Eyossy showroom | Logo | Brand Identity",
+            "btn": "View Project"
+        },
+        {
+            "id": 8,
+            "path": "/cover/8.jpg",
+            "name": "Christmas Market | Logo | Brand Identity",
+            "btn": "View Project"
+        },
+        {
+            "id": 9,
+            "path": "/cover/9.jpg",
+            "name": "LASTER | Logo | Packaging",
+            "btn": "View Project"
+        },
+        {
+            "id": 10,
+            "path": "/cover/10.jpg",
+            "name": "Eclante | Logo | Brand Identity",
+            "btn": "View Project"
+        },
+        {
+            "id": 11,
+            "path": "/cover/11.jpg",
+            "name": "Miki Cheese | Sticker | Illustration Design",
+            "btn": "View Project"
+        },
+        {
+            "id": 12,
+            "path": "/cover/12.jpg",
+            "name": "Invitation Card Design",
+            "btn": "View Project"
+        },
+        {
+            "id": 13,
+            "path": "/cover/13.jpg",
+            "name": "Corporate Identity Design",
+            "btn": "View Project"
+        },
+        {
+            "id": 14,
+            "path": "/cover/14.jpg",
+            "name": "FAKE Reality | Poster Design",
+            "btn": "View Project"
+        },
+        {
+            "id": 15,
+            "path": "/cover/15.jpg",
+            "name": "GS HOTEL Poster | Products Design",
+            "btn": "View Project"
+        }
+    ],
+    "constacts": [
+        "CONTACT",
+        "Get in Touch",
+        "Ready to start a project? Reach out trough any of these channels",
+        [
+            {
+                "icon": "/telephone.svg",
+                "name": "Phone",
+                "info": "+374 43 70 99 90 ",
+                "href": "tel:+37443709990"
+            },
+            {
+                "icon": "/email.svg",
+                "name": "Email",
+                "info": "ayan.designn@gmail.com",
+                "href": "mailto:ayan.designn@gmail.com"
+            },
+            {
+                "icon": "/message.svg",
+                "name": "WhatsApp",
+                "info": "+374 43 70 99 90 ",
+                "href": "https://wa.me/+37443709990"
+            },
+            {
+                "icon": "/message.svg",
+                "name": "Telegram",
+                "info": "+374 43 70 99 90 ",
+                "href": "https://t.me/+37443709990"
+            }
+        ],
+        "Free Consultation",
+        "Not sure where to start? Book a free 30-minute consultation call to discuss your project needs.",
+        "Book a Free Call"
+    ],
+    "Modal": [
+        "Schedule Your Free Consultation",
+        "Fill out the form below to book a 30-minute call to discuss your project.",
+        "Name",
+        "Email",
+        "example@email.com",
+        "Phone Number",
+        "+1 234 567 8900",
+        "Preferred Date",
+        "Select date",
+        "Schedule Consultation",
+        "Choose a call service",
+        [
+            "Services",
+            "Design Services",
+            "Marketing Services",
+            "Wildberries Manager Services"
+        ]
+    ],
+    "Footer": "© 2023-2025 AYAN Agency. All rights reserved.",
+    "Portfolio": "Portfolio"
+}

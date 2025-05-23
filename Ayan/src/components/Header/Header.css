@@ -1,0 +1,231 @@
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-bg);
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid hsl(240 3.7% 15.9%);
+    z-index: 99;
+}
+
+.header {
+    padding: 10px 50px;
+    width: 1380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.lngbtn {
+    width: 120px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: 2px solid var(--border-color);
+    background-color: transparent;
+    color: var(--header-text);
+}
+
+.lngbtn:hover {
+    border-color: var(--accent-color);
+}
+
+.nav {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navtext {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter, sans-serif;
+    color: var(--header-text);
+}
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: -50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    z-index: 999;
+    border: var(--accent-color) 1px solid;
+}
+
+.language-dropdown button {
+    color: var(--text-color);
+    padding: 6px 12px;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo {
+    cursor: pointer;
+    font-family: "Bodoni Moda", serif;
+    font-size: 40px;
+    line-height: 2.25rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: var(--header-text);
+}
+
+.logotext {
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1rem;
+    color: var(--header-text);
+}
+
+.btns {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    background-color: transparent;
+    color: var(--header-text);
+    border-radius: 8px;
+    border: var(--border-color) 1px solid;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    border: var(--accent-color) 1px solid;
+}
+
+.theme-icon {
+    transition: transform 0.5s ease;
+}
+
+.theme-icon.rotate {
+    transform: rotate(360deg);
+}
+
+.navitem {
+    cursor: pointer;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: var(--border-color) 1px solid;
+    align-items: center;
+    justify-content: center;
+    color: var(--header-text);
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.burger-menu:hover {
+    border: var(--accent-color) 1px solid;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--header-bg);
+    backdrop-filter: blur(10px);
+    z-index: 98;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    border-top: 1px solid var(--border-color);
+}
+
+.mobile-nav.open {
+    transform: translateX(0);
+}
+
+.mobile-navtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    color: var(--header-text);
+    font-family: Inter, sans-serif;
+    margin-bottom: 40px;
+}
+
+.mobile-navitem {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.mobile-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .language-dropdown {
+        left: 50%;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+    
+    .mobile-nav {
+        display: flex;
+    }
+    
+    .btns {
+        width: auto;
+    }
+}

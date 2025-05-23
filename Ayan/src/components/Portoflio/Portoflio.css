@@ -1,0 +1,106 @@
+.portfolio {
+    background-color: var(--bg-color);
+    font-family: Inter, sans-serif;
+    padding: 50px 40px;
+    margin: auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+    transition: 0.5s;
+    text-align: start;
+}
+
+.imgcard {
+    width: 550px;
+    height: 320px;
+    border-radius: 8px;
+    background-size: 110%;
+    background-position: center;
+    position: relative;
+    transition: 0.5s;
+    z-index: 0;
+    box-shadow: 1px 1px 100px -20px black inset;
+}
+
+.imgcard:hover {
+    background-size: 120%;
+}
+
+.name {
+    color: var(--header-text);
+    width: 550px
+}
+
+.prtbtn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    height: 40px;
+    max-width: 200px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.prtbtn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.show-more-btn,
+.show-less-btn {
+    height: 40px;
+    width: 200px;
+    border: 1px solid var(--accent-color);
+    background-color: transparent;
+    color: var(--text-color);
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.show-more-btn:hover,
+.show-less-btn:hover {
+    box-shadow: 0px 0px 8px var(--accent-color);
+}
+
+@media (max-width: 800px) and (min-width:520px) {
+    .imgcard {
+        width: 400px;
+        height: 220px;
+    }
+
+    .name {
+        width: 400px;
+    }
+}
+
+@media (max-width: 520px) {
+    .imgcard {
+        width: 300px;
+        height: 180px;
+    }
+
+    .name {
+        width: 300px;
+    }
+}
+

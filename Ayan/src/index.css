@@ -1,0 +1,48 @@
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --header-bg: rgba(0, 0, 0, 0.8);
+  --header-text: white;
+  --border-color: hsl(240 3.7% 15.9%);
+  --accent-color: rgb(72, 122, 98);
+}
+
+body.dark {
+  --logo: rgb(190, 187, 182);
+  --bg-color: #000000;
+  --text-color: #e0e0e0;
+  --home-text: rgb(150, 150, 158);
+  --header-bg: rgba(0, 0, 0, 0.8);
+  --header-text: white;
+  --border-color: hsl(240 3.7% 15.9%);
+  --accent-color: rgb(43, 68, 56);
+  --block-hover: rgb(92, 152, 124);
+  --btn-bg: #19191a;
+  --invert: invert(1);
+}
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #333;
+  --home-text: hsl(240 3.7% 15.9%);
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --header-text: #333;
+  --border-color: #ccc;
+  --accent-color: rgb(92, 152, 124);
+  --block-hover: rgb(43, 68, 56);
+  --btn-bg: #f1f5f9;
+  --inverse: invert(0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
