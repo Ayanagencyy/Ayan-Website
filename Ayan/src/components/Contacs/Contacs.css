@@ -1,7 +1,7 @@
 .contacts {
     background-color: var(--bg-color);
     font-family: Inter, sans-serif;
-    padding: 20px 30px;
+    padding: 50px 40px;
     margin: auto;
     max-width: 1200px;
     border-radius: 8px;
@@ -13,6 +13,11 @@
     text-align: center;
     transition: 0.5s;
 }
+
+.ctext3 {
+    font-weight: 200;
+}
+
 
 .info {
     margin-top: 30px;
@@ -62,7 +67,7 @@
 .book {
     padding: 10px;
     max-width: 500px;
-    height: 250px;
+    min-height: 250px;
     border: 1px solid var(--accent-color);
     box-shadow: 0px 0px 10px var(--accent-color);
     border-radius: 8px;
@@ -94,4 +99,14 @@
 
 .cinfo {
     color: var(--header-text);
+}
+
+@media (max-width: 420px) {
+    .book {
+        max-width: 250px;
+    }
+
+    .cbtn {
+        width: 240px;
+    }
 }

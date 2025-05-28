@@ -17,7 +17,7 @@ const Contacs = ({contacts}) => {
         <div className="contacts">
           <h3 className="ctext">{constacts[0]}</h3>
           <h1 className="ctext2">{constacts[1]}</h1>
-          <h2 className="ctext">{constacts[2]}</h2>
+          <h2 className="ctext3">{constacts[2]}</h2>
           <div className="info">
             <div className="blocks">
               {

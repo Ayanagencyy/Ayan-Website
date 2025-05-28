@@ -8,9 +8,9 @@ const Services = ({ services }) => {
     return (
         <>
             <div id="services" ref={services}></div>
-            <div>
+            <div className='services'>
                 <h1 >{Services[0]}</h1>
-                <div className='services'>
+                <div className='serv'>
                     {
                         Services[1].map(el => {
                             return <li key={el} className='service'>{el}</li>

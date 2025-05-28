@@ -16,6 +16,7 @@
 }
 
 .abouttext {
+    font-weight: 300;
     max-width: 800px;
     color: rgb(150, 150, 158);
 }

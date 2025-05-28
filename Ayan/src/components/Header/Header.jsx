@@ -39,8 +39,8 @@ const Header = ({ scrolhome, scrolabout, scrolservices, scrolportfolio, scrolcon
         <header>
             <div className="header">
                 <div onClick={() => scrolhome()}>
-                    <span className="logo" onClick={() => scrolhome()}>Ayán </span>
-                    <span className="logotext">AGENCY</span>
+                    <span className="logo" onClick={() => scrolhome()}>Ayán</span>
+                    <span className="logotext">agency</span>
                 </div>
                 <div className="nav">
                     <div className='navtext'>
