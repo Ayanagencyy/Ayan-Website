@@ -120,3 +120,11 @@ form {
 .react-datepicker__day-name {
   color: var(--header-text) !important;
 }
+
+.form-message {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 14px;
+  color: white;
+}
