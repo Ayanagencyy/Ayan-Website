@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import './Modal.css'
-import { useState } from 'react'
+import './Modal.css';
+import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { enAU, enUS } from 'date-fns/locale';
+import { enUS } from 'date-fns/locale';
+import { sendContactEmail } from '../../services/emailService.js';
 
 const Modal = ({ onClose }) => {
   const { t } = useTranslation();
@@ -14,20 +15,37 @@ const Modal = ({ onClose }) => {
     email: '',
     phone: '',
     date: null,
+    option: '',
   });
+
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);  // <-- loading state
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    setMessage('');
   };
 
   const handleDateChange = (date) => {
     setForm({ ...form, date });
+    setMessage('');
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(form);
-    onClose();
+    setMessage('');
+    setLoading(true);  // start loading
+
+    try {
+      await sendContactEmail(form);
+      setMessage('Your message has been sent successfully!');
+      setForm({ name: '', email: '', phone: '', date: null, option: '' }); // optional: clear form
+    } catch (error) {
+      setMessage('Failed to send message. Please try again.');
+      console.error('Email send error:', error?.text || error);
+    } finally {
+      setLoading(false);  // stop loading
+    }
   };
 
   return (
@@ -72,4 +90,4 @@ const Modal = ({ onClose }) => {
   );
 };
 
-export default Modal;
+export default Modal
