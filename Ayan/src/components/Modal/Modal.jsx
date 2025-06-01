@@ -37,16 +37,16 @@ const Modal = ({ onClose }) => {
         <h2>{modal[0]}</h2>
         <p>{modal[1]}</p>
         <form onSubmit={handleSubmit}>
-          <span className="cinfo m">{modal[2]}</span>
+          <div className="cinfo m">{modal[2]}</div>
           <input type="text" name="name" placeholder={modal[2]} onChange={handleChange} required className="inp" />
 
-          <span className="cinfo m">{modal[3]}</span>
+          <div className="cinfo m">{modal[3]}</div>
           <input type="email" name="email" placeholder={modal[4]} onChange={handleChange} required className="inp" />
 
-          <span className="cinfo m">{modal[5]}</span>
+          <div className="cinfo m">{modal[5]}</div>
           <input type="tel" name="phone" placeholder={modal[6]} onChange={handleChange} required className="inp" />
 
-          <span className="cinfo m">{modal[7]}</span>
+          <div className="cinfo m">{modal[7]}</div>
           <DatePicker
             selected={form.date}
             onChange={handleDateChange}
@@ -57,7 +57,7 @@ const Modal = ({ onClose }) => {
             minDate={new Date()}
             required
           />
-          <span>{modal[10]}</span>
+          <div>{modal[10]}</div>
           <select className='sel'>
             {
               modal[11].map((el) => {

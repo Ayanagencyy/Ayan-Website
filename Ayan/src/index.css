@@ -19,6 +19,7 @@ body.dark {
   --block-hover: rgb(92, 152, 124);
   --btn-bg: #19191a;
   --invert: invert(1);
+  --cbtn : #05585333;
 }
 
 body.light {
@@ -32,6 +33,7 @@ body.light {
   --block-hover: rgb(43, 68, 56);
   --btn-bg: #f1f5f9;
   --inverse: invert(0);
+  --cbtn : #ddd8d4;
 }
 
 body {
